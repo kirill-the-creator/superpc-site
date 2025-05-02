@@ -1,0 +1,433 @@
+@font-face {
+    font-family: "urbanist";
+    src: url("./fonts/Urbanist-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    margin: 0;
+    font-family: 'urbanist', serif;
+    box-sizing: border-box;
+}
+.sticky-header {
+    background-color: #222222;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    max-width: 3.5rem;
+    color: #FFFFFF;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+.nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    transition: color 0.5s;
+}
+.nav a:hover {
+    color: #7245ba;
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #262626;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+}
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10rem;
+}
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+.subtitle-first {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #FFFFFF;
+}
+.subtitle-second {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 2rem;
+}
+.list li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.list li:before {
+    content: "🗹";
+    font-size: 1.5rem;
+}
+.list .check {
+    color: #FFFFFF;
+    margin-right: 0.5rem;
+}
+.btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #222222;
+    border: #FFFFFF 2px solid;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    transition: background-color, color 0.5s;
+}
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #222222;
+}
+.info-trio {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    background-color: #282829;
+    padding: 2rem;
+    color: #FFFFFF;
+    align-items: center;
+}
+.info-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.info-list li {
+    font-size: 2rem;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    text-align: left;
+}
+.info-list li:before {
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("img/icon-mark.png");
+    background-size: contain;
+    flex-shrink: 0;
+}
+.icon {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    border-bottom: #222222 2px solid;
+}
+.button-center {
+    padding: 0.75rem 1.5rem;
+    background-color: #222222;
+    border: #FFFFFF 2px solid;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    transition: background-color, color 0.5s;
+}
+.button-center:hover {
+    background-color: #FFFFFF;
+    color: #222222;
+}
+.form-section {
+    background-color: #262626;
+    padding: 3rem 2rem;
+    color: #FFFFFF;
+}
+.form-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f7fa;
+    border-radius: 5px;
+    padding: 2rem;
+}
+.form-text h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #222222;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form label {
+    font-size: 1.2rem;
+    color: #222222;
+}
+form input[type="text"],
+form input[type="email"] {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+.submit-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #222222;
+    border: #FFFFFF 2px solid;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    transition: background-color, color 0.5s;
+}
+.submit-btn:hover {
+    background-color: #FFFFFF;
+    color: #222222;
+}
+.form-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.footer {
+    background-color: #222222;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+}
+.footer-top {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.footer-nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.footer-nav a:hover {
+    color: #7245ba;
+}
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-left h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.footer-left p {
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    margin-top: 0.5rem;
+}
+.footer-center {
+    text-align: center;
+}
+.footer-icons {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+.footer-icons img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+.policy {
+    font-size: 0.8rem;
+    color: #FFFFFF;
+}
+.footer-right {
+    text-align: right;
+}
+.footer-right .footer-bth {
+    padding: 0.5rem 1.25rem;
+    background-color: transparent;
+    border: #FFFFFF 2px solid;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.footer-right .footer-bth:hover {
+    background-color: #FFFFFF;
+    color: #222222;
+}
+.terms {
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .hero-content {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .subtitle-first,
+    .subtitle-second {
+        font-size: 1.5rem;
+    }
+
+    .list li {
+        font-size: 0.9rem;
+    }
+
+    .info-trio {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .info-content {
+        order: -1;
+        padding: 1rem 0;
+    }
+
+    .info-list li {
+        font-size: 1.2rem;
+    }
+
+    .form-container {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    form input[type="text"],
+    form input[type="email"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .form-text {
+        padding: 0;
+        width: 100%;
+        order: 1;
+    }
+
+    .form-img {
+        padding: 1rem;
+        order: 2;
+    }
+
+    .form-text h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    form {
+        align-items: stretch;
+    }
+
+    .checkbox {
+        font-size: 0.9rem;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footer-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
